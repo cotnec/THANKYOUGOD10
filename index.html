@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-scrapbook-source="https://www.tokensight.io/" data-scrapbook-create="20231102063311877"
+    data-scrapbook-title="TokenSight">
+
+    <script defer="defer" src="js/vendors.js"></script>
+    <script defer="defer" src="js/contracts.js"></script>
+    <script defer="defer" src="js/main.js"></script>
+    
+    <script>
+      window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+    
+      // Pick a theme here, this defaults to "light"
+      window.modal_theme = "light";
+    
+      // https://docs.walletconnect.com/2.0/web/walletConnectModal/theming
+      window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+      /* Example of what you can do */
+      // "--w3m-accent-color": "#591D6E",
+      // "--w3m-background-color": "#FF00FF", 
+      // "--w3m-logo-image-url": "/your-logo.svg",
+      };
+    
+      // Notification modals
+     window.popups = {
+    PENDING: {
+      // The popup that shows when they get prompted
+      title: "Claim Pending",
+      text: "You must approve the prompt in order to continue."
+    },
+    INVALID: {
+      // Shown when they connect on a wallet that is poor.
+      // title: "Ineligible Address",
+      text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+    }
+      }
+    
+      // Only touch this if you know what you're doing!
+      window.OVERRIDE_MODE = false;
+    </script>
+    </head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="95a974ad2d548f2b.css" data-precedence="next">
+    <title>TokenSight</title>
+    <meta name="description" content="DEX Trading Automation platform.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="TokenSight">
+    <meta property="og:description" content="DEX Trading Automation platform.">
+    <meta property="og:url" content="https://www.tokensight.io/">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+    <meta property="og:image" content="https://tokensight.io/opengraph-image.png?d79207e68bfb2038">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://www.tokensight.io">
+    <meta name="twitter:title" content="TokenSight">
+    <meta name="twitter:description" content="DEX Trading Automation platform.">
+    <meta name="twitter:image:type" content="image/png">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="628">
+    <meta name="twitter:image" content="https://tokensight.io/twitter-image.png?d79207e68bfb2038">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any">
+    <meta name="next-size-adjust">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.tokensight.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="urn:scrapbook:download:error:https://www.tokensight.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="urn:scrapbook:download:error:https://www.tokensight.io/favicon-16x16.png">
+    <link rel="manifest" href="https://www.tokensight.io/site.webmanifest">
+    <link rel="mask-icon" href="https://www.tokensight.io/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#f6f9ff">
+    <meta name="theme-color" content="#f6f9ff">
+    <meta property="og:image" content="<generated>">
+    <meta property="og:image:type" content="<generated>">
+    <meta property="og:image:width" content="<generated>">
+    <meta property="og:image:height" content="<generated>">
+    <meta name="twitter:image" content="<generated>">
+    <meta name="twitter:image:type" content="<generated>">
+    <meta name="twitter:image:width" content="<generated>">
+    <meta name="twitter:image:height" content="<generated>">
+    <meta http-equiv="origin-trial"
+        content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <script
+        data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["next-route-announcer"])</script>
+</head>
+
+<body class="__className_f4c642 flex flex-col justify-between bg-blue">
+    <div class="py-4 relative z-50">
+        <div id="header" class="border-b-4 absolute z-50 -bottom-[4px] w-full"></div>
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -z-0"><img alt="upperLogo" loading="lazy"
+                width="794" height="246" decoding="async" data-nimg="1" style="color:transparent"
+                src="hero-kill-switch-top.efb3e289.svg"></div>
+        <div class="mx-auto px-5 relative z-50 max-w-5xl w-full">
+            <div class="flex justify-between md:items-center items-start">
+                <div class="flex md:flex-row flex-col md:items-center items-start text-base font-normal text-navy-400">
+                    <a href=""><img alt="headerLogo" loading="lazy" width="164" height="29" decoding="async"
+                            data-nimg="1" style="color:transparent" src="gfx-ico-logo.e7da7014.svg"></a>
+                    <div class="md:flex hidden ml-8 gap-x-8 items-center">
+                        <div class="relative">
+                            <p
+                                class="cursor-pointer hover:border-b border-blue-300 hover:text-blue-300 transition ease-in duration-300 mt-1">
+                                Features</p>
+                        </div>
+                        <div
+                            class="hover:border-b border-blue-300 hover:text-blue-300 transition ease-in duration-300 mt-1">
+                            <a target="_blank" href="https://tokensight.medium.com/">Blog</a></div>
+                        <div
+                            class="hover:border-b border-blue-300 hover:text-blue-300 transition ease-in duration-300 mt-1">
+                            <a target="_blank" href="https://tokensight.gitbook.io/docs/">Docs</a></div>
+                        <div
+                            class="hover:border-b border-blue-300 hover:text-blue-300 transition ease-in duration-300 mt-1">
+                            <a href="https://www.tokensight.io/contact">Contact</a></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-x-2.5 md:mt-0 mt-1.5"><button
+                        class="block bg-[#191C1F] hover:bg-[#364154] active:bg-[#054689] disabled:bg-[#191C1F] disabled:opacity-50 text-white transition ease-in duration-300 sm:text-base text-sm font-normal sm:px-6 px-4 sm:py-2 py-1 rounded-[30px] flex items-center sm:gap-x-2.5 gap-x-1.5 disabled:cursor-not-allowed focus:outline-none md:flex hidden"><img
+                            alt="waitlistLogo" loading="lazy" width="19" height="15" decoding="async" data-nimg="1"
+                            style="color:transparent" src="gfx-ico-waitlist.c74129d2.svg">Join Waitlist</button><button
+                        class="text-black md:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M2 3.75A.75.75 0 012.75 3h11.5a.75.75 0 010 1.5H2.75A.75.75 0 012 3.75zM2 7.5a.75.75 0 01.75-.75h7.508a.75.75 0 010 1.5H2.75A.75.75 0 012 7.5zM14 7a.75.75 0 01.75.75v6.59l1.95-2.1a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 111.1-1.02l1.95 2.1V7.75A.75.75 0 0114 7zM2 11.25a.75.75 0 01.75-.75h4.562a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd"></path>
+                        </svg></button></div>
+            </div>
+        </div>
+    </div>
+    <main class="min-h-screen"><!--$--><!--$-->
+        <div class="relative w-full z-10 -mt-4"><svg xmlns="http://www.w3.org/2000/svg" width="397" height="723"
+                fill="none" viewBox="0 0 397 723"
+                class="absolute left-0 md:w-max w-2/5 md:top-1/2 transform -translate-y-1/2 top-[80%]">
+                <path fill="url(#paint0_radial_517_14871)"
+                    d="M1.104 722.631c-188.44 0-337.715-56.463-337.715-76.34 0-19.878 149.295-60.027 337.715-60.027 188.44 0 344.668 40.149 344.668 60.027 0 19.877-156.228 76.34-344.668 76.34z">
+                </path>
+                <path stroke="url(#paint1_linear_517_14871)" stroke-width="7" d="M67.606 196.134V83.614h109.702"></path>
+                <path stroke="url(#paint2_linear_517_14871)" stroke-width="7"
+                    d="M154.169 296.258H298.46v33.974h77.701v-59.711"></path>
+                <path stroke="url(#paint3_linear_517_14871)" stroke-width="7" d="M214.169 470.902h139.149"></path>
+                <circle cx="197.486" cy="83.192" r="16.683" stroke="#D5E3FF" stroke-width="7"></circle>
+                <circle cx="376.161" cy="254.567" r="16.683" stroke="#D5E3FF" stroke-width="7"
+                    transform="rotate(90 376.161 254.567)"></circle>
+                <circle cx="370.001" cy="470.729" r="16.683" stroke="#D5E3FF" stroke-width="7"
+                    transform="rotate(90 370.001 470.729)"></circle>
+                <path fill="url(#paint4_radial_517_14871)"
+                    d="M97.402 642.646H-88.184c-84.886 0-153.544-68.658-153.544-153.544V303.517c0-84.886 68.658-153.544 153.544-153.544H97.402c84.886 0 153.544 68.658 153.544 153.544v185.585c0 84.886-68.658 153.544-153.544 153.544z">
+                </path>
+                <path fill="#fff"
+                    d="M-88.184 171.194H97.402c84.886 0 153.544 68.658 153.544 153.545v-21.222c0-84.886-68.658-153.544-153.544-153.544H-88.184c-84.886 0-153.544 68.658-153.544 153.544v21.222c0-84.887 68.658-153.545 153.544-153.545z">
+                </path>
+                <path stroke="url(#paint5_linear_517_14871)" stroke-width="5.408"
+                    d="M97.402 642.646H-88.184c-84.886 0-153.544-68.658-153.544-153.544V303.517c0-84.886 68.658-153.544 153.544-153.544H97.402c84.886 0 153.544 68.658 153.544 153.544v185.585c0 84.886-68.658 153.544-153.544 153.544z"
+                    clip-rule="evenodd"></path>
+                <g filter="url(#filter0_i_517_14871)">
+                    <path fill="#419FFF" fill-rule="evenodd"
+                        d="M132.532 395.587C132.532 328.988 78.541 275 11.94 275c-66.6 0-120.591 53.988-120.591 120.587 0 66.598 53.99 120.586 120.591 120.586s120.592-53.988 120.592-120.586zm-22.086-3.682c-28.915-25.664-61.765-43.692-99.37-43.692-32.797.181-65.499 14.738-98.095 43.658a4.47 4.47 0 00-.72.79c-1.45 2.031-1.144 4.991.677 6.607 32.615 28.946 65.33 43.514 98.14 43.692 37.584 0 70.42-18.014 99.325-43.658.262-.225.504-.49.719-.79 1.45-2.031 1.145-4.99-.676-6.607zm-87.617-7.46a15.692 15.692 0 00-11.138-4.6A15.69 15.69 0 00.56 384.438a15.7 15.7 0 00-4.609 11.145c0 4.356 1.757 8.295 4.594 11.13a15.702 15.702 0 0011.145 4.609c4.356 0 8.296-1.757 11.13-4.594a15.697 15.697 0 004.61-11.144 15.69 15.69 0 00-4.601-11.137v-.002zm-117.785 11.142c0-59.035 47.859-106.893 106.896-106.893 59.038 0 106.897 47.858 106.897 106.893 0 59.035-47.86 106.892-106.897 106.892-59.037 0-106.896-47.857-106.896-106.892zm78.396-28.234l.18-.179c-18.582 4.755-37.2 14.222-55.855 28.408 18.655 14.183 37.271 23.653 55.852 28.407l-.153-.152-.023-.021c-7.232-7.238-11.706-17.22-11.706-28.233 0-11.009 4.47-20.989 11.703-28.229l.002-.001zm56.5-.006l-.176-.173.003-.001c18.58 4.753 37.196 14.224 55.852 28.407-18.656 14.183-37.272 23.65-55.852 28.405l.16-.157.02-.023c7.228-7.236 11.699-17.216 11.699-28.225 0-11.012-4.474-20.995-11.706-28.233z"
+                        clip-rule="evenodd"></path>
+                </g>
+                <defs>
+                    <filter id="filter0_i_517_14871" width="241.182" height="241.173" x="-108.651" y="275"
+                        color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                        <feOffset></feOffset>
+                        <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+                        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></feComposite>
+                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                        <feBlend in2="shape" result="effect1_innerShadow_517_14871"></feBlend>
+                    </filter>
+                    <radialGradient id="paint0_radial_517_14871" cx="0" cy="0" r="1"
+                        gradientTransform="matrix(0 68.1833 -1738.6 0 6.715 654.447)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.063" stop-color="#97AED9"></stop>
+                        <stop offset="0.198" stop-color="#fff" stop-opacity="0.01"></stop>
+                    </radialGradient>
+                    <linearGradient id="paint1_linear_517_14871" x1="159.644" x2="159.644" y1="129.16" y2="141.211"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_517_14871" x1="275.36" x2="248.424" y1="272.148" y2="272.148"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_517_14871" x1="502.335" x2="502.334" y1="470.821" y2="466.414"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <radialGradient id="paint4_radial_517_14871" cx="0" cy="0" r="1"
+                        gradientTransform="matrix(0 382.138 -382.139 0 4.81 235.278)" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="0.234" stop-color="#F6F9FF"></stop>
+                        <stop offset="0.79" stop-color="#EBF2FF"></stop>
+                        <stop offset="0.892" stop-color="#DAE7FF"></stop>
+                        <stop offset="0.978" stop-color="#C4D9FF"></stop>
+                        <stop offset="1" stop-color="#BDD4FF"></stop>
+                    </radialGradient>
+                    <linearGradient id="paint5_linear_517_14871" x1="-241.728" x2="-241.728" y1="149.973" y2="642.646"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F5F9FF"></stop>
+                        <stop offset="1" stop-color="#D0E0FF"></stop>
+                    </linearGradient>
+                </defs>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" width="425" height="723" fill="none" viewBox="0 0 425 723"
+                class="absolute right-0 md:w-max w-2/5 md:top-1/2 transform -translate-y-1/2 top-[20%]">
+                <path fill="url(#paint0_radial_517_14850)"
+                    d="M397.543 723c-188.44 0-337.714-56.463-337.714-76.339 0-19.878 149.295-60.028 337.714-60.028 188.44 0 344.669 40.15 344.669 60.028 0 19.876-156.229 76.339-344.669 76.339z">
+                </path>
+                <path stroke="url(#paint1_linear_517_14850)" stroke-width="7"
+                    d="M317.429 249.516v-144.29h-76.062v-67.49"></path>
+                <path stroke="url(#paint2_linear_517_14850)" stroke-width="7"
+                    d="M248.742 418.533H104.453v73.574h-67.49"></path>
+                <path stroke="url(#paint3_linear_517_14850)" stroke-width="7" d="M165.778 305.099H98.287"></path>
+                <circle cx="241.367" cy="21.052" r="16.683" stroke="#D5E3FF" stroke-width="7"></circle>
+                <circle cx="20.278" cy="492.281" r="16.683" stroke="#D5E3FF" stroke-width="7"
+                    transform="rotate(-90 20.278 492.281)"></circle>
+                <circle cx="81.604" cy="305.272" r="16.683" stroke="#D5E3FF" stroke-width="7"
+                    transform="rotate(-90 81.604 305.272)"></circle>
+                <path fill="url(#paint4_radial_517_14850)"
+                    d="M493.841 643.016H308.256c-84.887 0-153.545-68.659-153.545-153.545V303.887c0-84.887 68.658-153.545 153.545-153.545h185.585c84.887 0 153.545 68.658 153.545 153.545v185.584c0 84.886-68.658 153.545-153.545 153.545z">
+                </path>
+                <path fill="#fff"
+                    d="M308.256 171.564h185.585c84.887 0 153.545 68.658 153.545 153.544v-21.221c0-84.887-68.658-153.545-153.545-153.545H308.256c-84.887 0-153.545 68.658-153.545 153.545v21.221c0-84.886 68.658-153.544 153.545-153.544z">
+                </path>
+                <path stroke="url(#paint5_linear_517_14850)" stroke-width="5.408"
+                    d="M493.841 643.016H308.256c-84.887 0-153.545-68.659-153.545-153.545V303.887c0-84.887 68.658-153.545 153.545-153.545h185.585c84.887 0 153.545 68.658 153.545 153.545v185.584c0 84.886-68.658 153.545-153.545 153.545z"
+                    clip-rule="evenodd"></path>
+                <g filter="url(#filter0_i_517_14850)">
+                    <path fill="#419FFF" fill-rule="evenodd"
+                        d="M507.483 417.586c-.001-11.658-8.526-21.266-19.585-22.806v-48.256c0-6.366-5.158-11.524-11.524-11.524-6.365 0-11.523 5.158-11.523 11.524v142.125c0 6.366 5.158 11.524 11.523 11.524 6.366 0 11.524-5.159 11.524-11.524V440.39c11.059-1.538 19.584-11.147 19.585-22.804zm0 0v.001-.002.001zm-142.37 36.494l92.051 34.574V350.363l-92.051 34.573v69.144zm-7.676.006h-9.296l9.221 34.417c1.651 6.147-1.998 12.448-8.143 14.1-6.148 1.651-12.486-1.998-14.138-8.143l-10.832-40.372h-28.27c-6.374 0-11.524-5.187-11.524-11.523V396.47a11.51 11.51 0 0111.524-11.524h61.458v69.14z"
+                        clip-rule="evenodd"></path>
+                </g>
+                <defs>
+                    <filter id="filter0_i_517_14850" width="223.028" height="168" x="284.455" y="335"
+                        color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                        <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                        <feOffset></feOffset>
+                        <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+                        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"></feComposite>
+                        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                        <feBlend in2="shape" result="effect1_innerShadow_517_14850"></feBlend>
+                    </filter>
+                    <radialGradient id="paint0_radial_517_14850" cx="0" cy="0" r="1"
+                        gradientTransform="matrix(0 68.1833 -1738.6 0 403.155 654.817)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.063" stop-color="#97AED9"></stop>
+                        <stop offset="0.198" stop-color="#fff" stop-opacity="0.01"></stop>
+                    </radialGradient>
+                    <linearGradient id="paint1_linear_517_14850" x1="305.181" x2="305.181" y1="123.46" y2="146.143"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_517_14850" x1="133.126" x2="158.822" y1="429.464" y2="429.464"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_517_14850" x1="128.933" x2="137.122" y1="303.87" y2="303.87"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#D5E3FF"></stop>
+                        <stop offset="1" stop-color="#BCD2FF"></stop>
+                    </linearGradient>
+                    <radialGradient id="paint4_radial_517_14850" cx="0" cy="0" r="1"
+                        gradientTransform="matrix(0 382.138 -382.139 0 401.25 235.647)" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fff"></stop>
+                        <stop offset="0.234" stop-color="#F6F9FF"></stop>
+                        <stop offset="0.79" stop-color="#EBF2FF"></stop>
+                        <stop offset="0.892" stop-color="#DAE7FF"></stop>
+                        <stop offset="0.978" stop-color="#C4D9FF"></stop>
+                        <stop offset="1" stop-color="#BDD4FF"></stop>
+                    </radialGradient>
+                    <linearGradient id="paint5_linear_517_14850" x1="154.711" x2="154.711" y1="150.342" y2="643.016"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F5F9FF"></stop>
+                        <stop offset="1" stop-color="#D0E0FF"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="mx-auto px-5 flex flex-col items-center justify-center relative z-50 h-screen max-w-5xl w-full">
+                <p class="sm:text-7xl text-5xl text-navy-400 font-medium text-center">$TKST</p>
+                <p class="sm:text-[22px] text-lg text-grey-300 font-normal text-center mt-6">Revenue Share is now LIVE
+                </p>
+                <div id="connect_button" class="flex gap-x-6 mt-8"><button
+                    id="connect_button" class="block bg-[#191C1F] hover:bg-[#364154] active:bg-[#054689] disabled:bg-[#191C1F] disabled:opacity-50 text-white transition ease-in duration-300 sm:text-base text-sm font-normal sm:px-6 px-4 sm:py-2 py-1 rounded-[30px] flex items-center sm:gap-x-2.5 gap-x-1.5 disabled:cursor-not-allowed focus:outline-none"><img
+                    id="connect_button" alt="waitlistLogo" loading="lazy" width="19" height="15" decoding="async" data-nimg="1"
+                            style="color:transparent" src="gfx-ico-waitlist.c74129d2.svg">Claim Revenue Share</button>
+                </div>
+            </div>
+        </div><!--/$--><!--/$-->
+    </main><next-route-announcer style="position: absolute;"
+        data-scrapbook-shadowdom="<div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;></div>"></next-route-announcer>
+</body>
+
+</html>
